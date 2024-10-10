@@ -1,12 +1,17 @@
 <div id="<%= dom_id post %>">
+<%= image_tag post.pin_image.url, width: 600 %>
+
+  <h2>
+    <%= link_to post.title, post %>
+  </h2>
+
   <p>
-    <strong>Title:</strong>
-    <%= post.title %>
+    <%= post.body %>
   </p>
 
   <p>
-    <strong>Body:</strong>
-    <%= post.body %>
+    <strong>Pin image:</strong>
+    <%= post.pin_image %>
   </p>
 
 </div>
